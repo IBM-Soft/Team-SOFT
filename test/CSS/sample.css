@@ -1,0 +1,21 @@
+* {color:#7f7f7f;}
+
+h1{color:blue;}
+
+h2{color:green;}
+
+.important{color:red;}
+
+#divtest1 {border-style:solid; border-width:3px;}
+
+#point {background-color:yellow; width: 20%;}
+
+p.boxed {
+	width: 30%; 
+	padding: 1.5%;
+	margin: 1.5%;
+	border-right-color: red;
+	border-right: 15px;
+	border-left: 5px;
+	background-color:black;	
+	}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Player entry</title>
+	<meta charset="UTF-8"/>
+
+</head>
+
+<body>
+	
+	<form action="http://martinakraus.net/createPlayer.php" method="GET">
+		Vorname<input type="text" Vorname name="vorname" size="40" maxlenght="50"/><br/>
+		Nachname<input type="text" Nachname name="name" size="40" maxlenght="50"/><br/>
+		Verein<input type="text" Verein name="verein" size="40" maxlenght="100"/><br/>
+		Headcoach<input type="text" Headcoach name="hcoach" size="40" maxlenght="100"/><br/>
+		Assistant Coach<input type="text" Assistant Coach name="acoach" size="40" maxlenght="100"/><br/>
+		Position<select name="position" size="1">
+			<option value="center">Center</option>
+			<option value="guard">Guard</option>
+			<option value="power forward">Power Forward</option>
+			<option value="wing" selected="selected">Wing</option>
+			<option value="small forward">Small Forward</option>
+		</select><br/>
+		R&uuml;ckennummer<input type="number" name="number" min="1" max="99"/><br/>
+		Geburtsjahr<input type="number" name="jahr" min="1900"/><br/>
+		Aktiv Ja<input type="checkbox" name="aktiv" value="Ja"/>
+		Nein<input type="checkbox" name="aktiv" value="Nein" checked="checked"/><br/>
+		Als Favorit markieren<br/><input type="checkbox" name="favorit"/><br/>
+		<button type="submit">Absenden</button><br/>
+	</form>
+	
+</body>
+
+</html>

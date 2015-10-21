@@ -11,23 +11,45 @@
 <body>
 	
 	<form action="http://martinakraus.net/createPlayer.php" method="GET">
-		Vorname<input type="text" Vorname name="vorname" size="40" maxlenght="50"/><br/>
-		Nachname<input type="text" Nachname name="name" size="40" maxlenght="50"/><br/>
-		Verein<input type="text" Verein name="verein" size="40" maxlenght="100"/><br/>
-		Headcoach<input type="text" Headcoach name="hcoach" size="40" maxlenght="100"/><br/>
-		Assistant Coach<input type="text" Assistant Coach name="acoach" size="40" maxlenght="100"/><br/>
-		Position<select name="position" size="1">
+		<label for="vorname">Vorname</label>
+		<input type="text" id="vorname" Vorname name="vorname" size="40" maxlenght="50"/><br/>
+		
+		<label for="name">Nachname</label>
+		<input type="text" id="name" Nachname name="name" size="40" maxlenght="50"/><br/>
+		
+		<label for="verein">Verein</label>
+		<input type="text" Verein name="verein" size="40" maxlenght="100"/><br/>
+		
+		<label for="hcoach">Headcoach</label>
+		<input type="text" Headcoach name="hcoach" size="40" maxlenght="100"/><br/>
+		
+		<label for="acoach">Assistant Coach</label>
+		<input type="text" Assistant Coach name="acoach" size="40" maxlenght="100"/><br/>
+		
+		<label for="position">Position</label>
+		<select name="position" size="1">
 			<option value="center">Center</option>
 			<option value="guard">Guard</option>
 			<option value="power forward">Power Forward</option>
 			<option value="wing" selected="selected">Wing</option>
 			<option value="small forward">Small Forward</option>
 		</select><br/>
-		R&uuml;ckennummer<input type="number" name="number" min="1" max="99"/><br/>
-		Geburtsjahr<input type="number" name="jahr" min="1900"/><br/>
-		Aktiv Ja<input type="checkbox" name="aktiv" value="Ja"/>
-		Nein<input type="checkbox" name="aktiv" value="Nein" checked="checked"/><br/>
-		Als Favorit markieren<br/><input type="checkbox" name="favorit"/><br/>
+		
+		<label for="number">R&uuml;ckennummer</label>
+		<input type="number" name="number" min="1" max="99"/><br/>
+		
+		<label for="Geburtsjahr</label>
+		<input type="number" name="jahr" min="1900"/><br/>
+		
+		Aktiv
+		<label for="aktiv_ja">Ja</label>
+		<input type="checkbox" id="aktiv_ja" name="aktiv" value="Ja"/>
+				
+		<label for="aktiv_nein">Nein</label>
+		<input type="checkbox" id="aktiv_nein" name="aktiv" value="Nein" checked="checked"/><br/>
+		
+		<label for="favorit">Als Favorit markieren</label><br/>
+		<input type="checkbox" name="favorit"/><br/>
 		<button type="submit">Absenden</button><br/>
 	</form>
 	

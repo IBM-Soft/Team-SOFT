@@ -1,0 +1,82 @@
+
+
+a:hover{
+	background-color: rgb(63,72,203);
+	display:block;
+}
+a{
+	text-decoration: none;
+	color: black;
+	size:18px;
+}
+.left{
+	width:20%;
+	height: 100%;
+	float: left;
+	background-color: rgb(0,163,232);
+}
+
+.middle{	
+	margin-left: 20%;
+	text-align:center;
+	width: 60%;
+	height: 100%; 
+	
+}
+
+.right{
+	width: 20%;
+	height: 100%;
+	float: right;
+	background-color: rgb(0,163,232);
+}
+
+div {
+	background-color: rgb(153,217,234);
+}
+
+img {
+	margin-top:40px;
+}
+h1{	
+	
+	font-size:22px;
+}
+
+.headingHome{
+	color: rgb(136,0,21);
+}
+
+.menu{
+	width:300px;
+	border-style: solid;
+	border-color: rgb(63,72,204);
+	margin:auto;
+	margin-top:40px;
+}
+
+table{
+	font-size:16px;
+	color: black;
+}
+
+#playerHeader{
+	font-size: 24px;
+	color: rgb(75,47,37);
+}
+
+select{
+	
+	width:200;
+}
+
+input{
+	width:200;
+}
+
+ #haha
+ {
+     float: right;
+     color: #00FF00;
+     
+ }

@@ -1,0 +1,81 @@
+/* Dropdown menu in css*/
+ul#navigation_main
+{
+float: right;
+   font-weight: bold; 
+   font-variant: small-caps;
+   font-size: 20px;
+   color: #0000FF;
+   
+}
+     /* list ansprechen*/
+ul#navigation_main li
+{
+    float: right;
+     position: relative;
+     list-style-type: none;
+}  
+
+ul#navigation_main li a
+{
+    color: #000000;
+    text-decoration: none;
+}   
+
+ul#navigation_main li a:hover
+{
+     color: #0000FF;
+     text-decoration: none;
+}  
+
+ul#navigation_main li.Homepage
+{
+    width: 100px;
+}
+/* dropdown oder*/
+ul#navigation_main li.Other
+{
+    width: 70px;
+}
+
+ul#navigation_main li ul.dropdown_navi
+{
+    background-color: #FFFFFF;
+    float: right;
+    position: absolute;
+    border: solid 1px #000000;
+    top : 25px;
+    left: -20px;
+    padding: 15px 5px 15px 5px;
+    width: 115px;
+    font-size: 15px;
+    border-radius: 7px;
+    
+    
+}
+
+ul#navigation_main li ul.dropdown_navi a 
+{
+    color: #000000;
+}
+
+ul#navigation_main li ul.dropdown_navi a:hover
+{
+    color: #0000FF;
+}
+  
+ul#navigation_main li ul li 
+{
+    display: block;
+    float: none;
+}
+
+ul#navigation_main li>ul
+{
+    display: none;
+}
+
+ul#navigation_main li:hover>ul
+{
+    display: block;
+}

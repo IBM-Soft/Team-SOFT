@@ -1,31 +1,44 @@
-<!DOCTYPE html>
-
+<DOCTYPE html>
 <html>
-
 <head>
-	<title>Player entry</title>
-	<meta charset="UTF-8"/>
-
-</head>
-
+	<title>Add Player</title>
+	<link rel="mystyling" type="text/css" href="stylesheet.css"/>
+<head>
 <body>
+
+
+
+
+	<div class="left" id="side">
 	
-	<form action="http://martinakraus.net/createPlayer.php" method="GET">
+	</div>
+	<div class="right" id="side">
+		
+	</div>
+	<div class="middle">
+	<h1 id="playerHeader">Add Player</h1>
+	<form id="senden" action?"http://martinakraus.net/createPlayer.php" 
+	method="get">
+		
+		
+         <fieldset>
+         <legend> Neu Spieler einfuegen</legend>
 		<label for="vorname">Vorname</label>
 		<input type="text" id="vorname" name="vorname" size="40" maxlength="50"/><br/>
-		
+
+
 		<label for="name">Nachname</label>
 		<input type="text" id="name" name="name" size="40" maxlength="50"/><br/>
-		
+
 		<label for="verein">Verein</label>
 		<input type="text" id="verein" name="verein" size="40" maxlength="100"/><br/>
-		
+
 		<label for="hcoach">Headcoach</label>
 		<input type="text" id="hcoach" name="hcoach" size="40" maxlength="100"/><br/>
-		
+
 		<label for="acoach">Assistant Coach</label>
 		<input type="text" id="acoach" name="acoach" size="40" maxlength="100"/><br/>
-		
+
 		<label for="position">Position</label>
 		<select name="position" id="position" size="1">
 			<option value="center">Center</option>
@@ -34,25 +47,26 @@
 			<option value="wing" selected="selected">Wing</option>
 			<option value="small forward">Small Forward</option>
 		</select><br/>
-		
-		<label for="number">R&uuml;ckennummer</label>
+
+		<label for="number">Reuckennummer</label>
 		<input type="number" id="number" name="number" min="1" max="99"/><br/>
-		
+
 		<label for="jahr">Geburtsjahr</label>
 		<input type="number" id="jahr" name="jahr" min="1900"/><br/>
-		
+
 		Aktiv
 		<label for="aktiv_ja">Ja</label>
 		<input type="checkbox" id="aktiv_ja" name="aktiv" value="Ja"/>
-				
+
 		<label for="aktiv_nein">Nein</label>
 		<input type="checkbox" id="aktiv_nein" name="aktiv" value="Nein" checked="checked"/><br/>
-		
+
 		<label for="favorit">Als Favorit markieren</label><br/>
 		<input type="checkbox" id="favorit" name="favorit"/><br/>
 		<button type="submit">Absenden</button><br/>
+			</fieldset>
+		
 	</form>
-	
+	</div>
 </body>
-
-</html>
+<html>

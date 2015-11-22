@@ -1,15 +1,17 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
 	<title>Spieler anzeigen</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html"/>
+	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/basicStyle.css"/>
 	<link rel="stylesheet" type="text/css" href="css/player_detailStyle.css"/>
 	<script lang="javascript" style="text/javascript" src="javascript/player_detail.js"></script>
-<head>
+</head>
+
 <body onload="myFunction(1)">
 	<div class="middle" >
-		<a href="homePage.html">Startseite</a>
 		<h1>Meine Spieler</h1>
 		<table id="table">
 			<th onclick="myFunction(1)" id="all_players" colspan="4" >Alle Spieler</th>
@@ -25,6 +27,11 @@
 				<td>Geburtsjahr</td>
 			</tr>
 		</table>
+		
+		<a href="home.html">
+			<button type="button" id="return_button">zur&uuml;ck</button>	
+		</a>		
 	</div>
 </body>
-<html>
+
+</html>

@@ -1,6 +1,6 @@
 /*	^ : vom start
- [A-Za-zäöüÄÖÜß]+ : Eine anzhal von deutschen buchstaben
- $ : danach nix mehr zusätzliches
+ [A-Za-zäöüÄÖÜß]+ : Eine Anzhal von deutschen Buchstaben
+ $ : danach nichts mehr zusätzliches
  */
 var regNames = /^[A-Za-zäöüÄÖÜß]+$/
 

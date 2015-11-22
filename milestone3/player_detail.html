@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Spieler anzeigen</title>
+	<meta http-equiv="Content-Type" content="text/html"/>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/basicStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="css/player_detailStyle.css"/>
+	<script lang="javascript" style="text/javascript" src="javascript/player_detail.js"></script>
+</head>
+
+<body onload="myFunction(1)">
+	<div class="middle" >
+		<h1>Meine Spieler</h1>
+		<table id="table">
+			<th onclick="myFunction(1)" id="all_players" colspan="4" >Alle Spieler</th>
+			<th onclick="myFunction(2)" id="my_favorites" colspan="4" >Meine Favoriten</th>		
+			<tr>
+				<td>Spieler</td>
+				<td>Verein</td>
+				<td>Headcoach</td>
+				<td>Assistantcoach</td>
+				<td>Position</td>
+				<td>Aktiv</td>
+				<td>Rückennummer</td>
+				<td>Geburtsjahr</td>
+			</tr>
+		</table>
+		
+		<a href="home.html">
+			<button type="button" id="return_button">zur&uuml;ck</button>	
+		</a>		
+	</div>
+</body>
+
+</html>

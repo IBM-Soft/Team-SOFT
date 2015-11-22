@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html"/>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/basicStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="css/playerEntryStyle.css"/>
+	<script lang="javascript" style="text/javascript" src="javascript/player.js"></script>
+	<title>Spieler anlegen</title>
+</head>
+
+<body>
+	<div class="middle">
+		<h1 id="playerHeader">Spieler anlegen</h1>
+		<form action="http://martinakraus.net/createPlayer.php" method="GET" onsubmit="return myFunction()">
+			
+			<div id="player_left">
+				<label for="name" >Name</label>
+				<input id="name" type="text" name="name"/></br>
+				
+				<label for="vorname" >Vorname</label>
+				<input id="vorname" type="text" name="vorname"/></br>
+				
+				<label for="verein" >Verein</label>
+				<input id="verein" type="text" name="verein"/></br>
+			
+				<label for="hcoach" >Coach</label>
+				<input id="hcoach" type="text" name="hcoach"/></br>
+				
+				<label for="acoach" >Assistentcoach</label>
+				<input id="acoach" type="text" name="acoach"/></br>
+				
+				<label for="number" >Trikotnummer</label>
+				<input id="number" type="number" name="number"/></br>
+				
+				<label for="jahr" >Jahrgang</label>
+				<input id="ja" type="number" name="jahr"/></br>
+			
+				<label for="position" >Position</label>
+				<select name="position" size="1">
+						<option value="Center">Center</option>
+						<option value="Guard">Guard</option>
+						<option value="PowerForward">Power Forward</option>
+						<option selected value="Wing">Wing</option>
+						<option value="SmallForward">Small Forward</option>
+				</select></br>
+				
+				<label for="aktiv" >Aktiv</label>
+				<input class="aktiv" type="checkbox" name="aktiv" value="Ja">Ja</input>
+				<input class="aktiv" type="checkbox" name="aktiv" value="Nein" 
+				checked="checked">Nein</input>
+				
+				<button type="submit" id="submit_button">
+					Absenden
+				</button>
+				
+				<a href="home.html">
+					<button type="button" id="return_button">zur&uuml;ck</button>	
+				</a>
+			</div>
+			
+			<div id="player_right">
+				Als Favorit markieren</br>
+				<input  type="checkbox" id="favorite_checkbox" name="favorit"/>
+			</div>
+		
+		</form>
+
+	</div>
+	
+</body>
+
+</html>

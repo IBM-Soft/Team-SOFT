@@ -1,37 +1,49 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-	<title>Spieler anzeigen</title>
+	<title>Player Detail</title>
 	<meta http-equiv="Content-Type" content="text/html"/>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/basicStyle.css"/>
 	<link rel="stylesheet" type="text/css" href="css/player_detailStyle.css"/>
-	<script lang="javascript" style="text/javascript" src="javascript/player_detail.js"></script>
 </head>
 
-<body onload="myFunction(1)">
+<body>
 	<div class="middle" >
-		<h1>Meine Spieler</h1>
-		<table id="table">
-			<th onclick="myFunction(1)" id="all_players" colspan="4" >Alle Spieler</th>
-			<th onclick="myFunction(2)" id="my_favorites" colspan="4" >Meine Favoriten</th>		
-			<tr>
-				<td>Spieler</td>
-				<td>Verein</td>
-				<td>Headcoach</td>
-				<td>Assistantcoach</td>
-				<td>Position</td>
-				<td>Aktiv</td>
-				<td>Rückennummer</td>
-				<td>Geburtsjahr</td>
-			</tr>
-		</table>
-		
+	<h1>Meine Spieler</h1>
+		<div class="tableData">
+			<table class="tabTable">
+				<thead>			
+					<tr>
+						<th id="alle_spieler" colspan="4" onClick="javascript:showAll();">Alle Spieler</th>
+						<th id="favoriten" colspan="4" onClick="javascript:showFavorite();">Meine Favoriten</th>
+					</tr>
+				</thead>				
+				<tbody>
+					<tr>
+						<th>Spieler</th>
+						<th>Verein</th>
+						<th>Headcoach</th>
+						<th>Assistant</th>
+						<th>Position</th>
+						<th>Aktiv</th>
+						<th>Nummer</th>
+						<th>Jahr</th>
+					</tr>
+				</tbody>				
+				<tfoot id="dataBody">
+					<!-- JSON Data -->
+				</tfoot>
+			</table>
+		</div>
 		<a href="home.html">
 			<button type="button" id="return_button">zur&uuml;ck</button>	
-		</a>		
+		</a>				
 	</div>
+	<script type="text/javascript" src="json/data.json"></script>
+	<script type="text/javascript" src="javascript/tableJs.js"></script>
 </body>
 
 </html>

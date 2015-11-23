@@ -43,18 +43,18 @@ function myFunction() {
         document.getElementById("number").setAttribute("style", "border: hidden;");
     }
 
-    var val2 = document.getElementById("ja").value;
+    var val2 = document.getElementById("jahr").value;
     if ((val2 < 1 || val2 > 2015)) {
         check[5] = false;
         isCorrect = false;
-        document.getElementById("ja").setAttribute("style", "border: 2px solid; border-color: red;");
+        document.getElementById("jahr").setAttribute("style", "border: 2px solid; border-color: red;");
         if (!focusIsSet) {
-            document.getElementById("ja").focus();
+            document.getElementById("jahr").focus();
         }
         focusIsSet = true;
     } else {
         check[5] = true;
-        document.getElementById("ja").setAttribute("style", "border: hidden;");
+        document.getElementById("jahr").setAttribute("style", "border: hidden;");
     }
 
 

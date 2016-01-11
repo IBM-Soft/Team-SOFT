@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <DOCTYPE html>
 <html>
 <head>
@@ -68,5 +69,72 @@
 		
 	</form>
 	</div>
+=======
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+	<title>Player entry</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet"
+		type="text/css"
+		href="styles.css"/>
+</head>
+
+<body>
+	<div id="center">	
+		<h1>Spieler anlegen</h1>		
+		<form action="http://martinakraus.net/createPlayer.php" method="GET">		
+			<div id="form_wrapper">
+				<div id="column_left">		
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" size="40" maxlength="50"/>			
+								
+					<label for="vorname">Vorname</label>
+					<input type="text" id="vorname" name="vorname" size="40" maxlength="50"/>
+					
+					<label for="verein">Verein</label>
+					<input type="text" id="verein" name="verein" size="40" maxlength="100"/>
+					
+					<label for="hcoach">Coach</label>
+					<input type="text" id="hcoach" name="hcoach" size="40" maxlength="100"/>
+					
+					<label for="acoach">Assistentcoach</label>
+					<input type="text" id="acoach" name="acoach" size="40" maxlength="100"/>
+					
+					<label for="position">Position</label>
+					<select name="position" id="position" size="1">
+						<option value="center">Center</option>
+						<option value="guard">Guard</option>
+						<option value="power forward">Power Forward</option>
+						<option value="wing" selected="selected">Wing</option>
+						<option value="small forward">Small Forward</option>
+					</select>
+					
+					<label for="number">Trikotnummer</label>
+					<input type="number" id="number" name="number" min="1" max="99"/>
+					
+					<label for="jahr">Jahrgang</label>
+					<input type="number" id="jahr" name="jahr" min="1900"/>
+					
+					<div id="checkbox_line_block">
+						<p>Aktiv</p>
+						<input type="checkbox" id="aktiv_ja" name="aktiv" value="Ja"/>
+						<label for="aktiv_ja">Ja</label>
+						<input type="checkbox" id="aktiv_nein" name="aktiv" value="Nein" checked="checked"/>
+						<label for="aktiv_nein">Nein</label>
+					</div>
+				</div>
+					
+				<div id="column_right">
+					<label for="favorit">Als Favorit markieren</label>
+					<input type="checkbox" id="favorit" name="favorit"/>
+				</div>
+			</div>
+			<button type="submit">Absenden</button>
+		</form>		
+	</div>	
+>>>>>>> 6cffc147eac5f443cd4da2d9dc037f26c0d923e9
 </body>
 <html>

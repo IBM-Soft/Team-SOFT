@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Player Detail</title>
+	<meta http-equiv="Content-Type" content="text/html"/>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="src/css/basicStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="src/css/player_detailStyle.css"/>
+	<script type="text/javascript" src="src/js/playerTable.js"></script>
+</head>
+
+<body>
+	<div class="middle" >
+	<h1>Meine Spieler</h1>
+		<div class="tableData">
+			<table class="tabTable">
+				<thead>			
+					<tr>
+						<th id="alle_spieler" colspan="4" onClick="javascript:showAll();">Alle Spieler</th>
+						<th id="favoriten" colspan="4" onClick="javascript:showFavorite();">Meine Favoriten</th>
+					</tr>
+				</thead>				
+				<tbody>
+					<tr>
+						<th>Spieler</th>
+						<th>Verein</th>
+						<th>Headcoach</th>
+						<th>Assistant</th>
+						<th>Position</th>
+						<th>Aktiv</th>
+						<th>Nummer</th>
+						<th>Jahr</th>
+					</tr>
+				</tbody>				
+				<tfoot id="dataBody">
+					<!-- JSON Data -->
+				</tfoot>
+			</table>
+		</div>
+		<a href="home.html">
+			<button type="button" id="return_button">Startseite</button>	
+		</a>	
+	</div>
+	<script type="text/javascript">createPlayerTable();</script>		
+
+	<!--<script type="text/javascript" src="./data.json"></script>-->
+	<!--<script type="text/javascript" src="javascript/tableJs.js"></script>-->
+</body>
+
+</html>

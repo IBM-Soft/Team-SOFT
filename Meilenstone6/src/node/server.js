@@ -1,7 +1,7 @@
 // Lets require/import the HTTP module
 var express = require('express');
 var fs = require("fs");
-var bodyParser = require('body-parser');
+//var bodyParser = require('body-parser');
 
 // Enable working with Data System und making it in variable local 
 var players = require("C:\\Users\\Justard\\Desktop\\mus\\WAW\\Meilenstone6\\data.json");
@@ -28,7 +28,7 @@ var PLAYER_FILE_PATH = "C:\\Users\\Justard\\Desktop\\mus\\WAW\\Meilenstone6\\for
 var server = express();
 
 /** SetUp Middleware **/
-server.use(bodyParser.json());
+//server.use(bodyParser.json());
 
 server.use(express.static(__dirname));
 
@@ -58,7 +58,7 @@ server.put('/Player', function(request, response){
   // Vorname Name, Jahrgang, Headcoach, Assistantcoach, Position, Trikotnummer
   console.log(JSON.stringify(request.body));
   
-  var dataset = { 
+  var dataset = [ 
      parameters["vorname"] + " " +  parameters["name"],
      parameters["jahr"],
      parameters["hcoach"],
@@ -66,10 +66,9 @@ server.put('/Player', function(request, response){
      parameters["position"],
      parameters["number "]
 	// parameters["  "]
-  };
+  ];
 	
-	var data ={};
-	data[]
+
 	
   // Writing the result in the player data
   fs.appendFile(PLAYER_FILE_PATH, dataset + "\n", function (err) {
